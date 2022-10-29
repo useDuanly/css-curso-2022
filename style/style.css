@@ -1,0 +1,131 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html {
+  scroll-behavior: smooth;
+  font-weight: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1.3rem;
+  width: 98%;
+  max-width: 1200px;
+  background: rgb(227, 225, 225);
+  border: solid 5px #2222;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  gap: 8px;
+}
+
+.container__title {
+  background-color: black;
+  font-weight: bold;
+  color: yellowgreen;
+  text-align: center;
+  border-style: solid;
+  border-color: brown;
+}
+.link {
+  list-style: none;
+}
+.container a {
+  padding-inline-start: 1rem;
+}
+
+/*Selectores Básicos
+ 1 Etiqueta - con elementos html
+ 2 identificadores con el atributo id - #.
+ 3 Classes - atributo clases - .
+*/
+
+p {
+  color: midnightblue;
+}
+
+#parrafo-dos {
+  color: green;
+}
+
+.text-32 {
+  color: skyblue;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+.bg-steelblue {
+  background: steelblue;
+}
+.text-white {
+  color: white;
+}
+
+.hijos-directos > li {
+  background-color: thistle;
+}
+.hijos-descendientes b {
+  background-color: thistle;
+}
+/*Los selectores de hermanos va a aplicar a los elementos que son hermanos y que estén pr debajo de elemento de referencia*/
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+/*Los selectores de hermanos adyacentes  toma como referencia y da estilos al primer  hijo */
+
+.hermanos-adyacentes + li {
+  background-color: thistle;
+}
+/*Selectores atributos*/
+.selectores-atributos a[href] {
+  color: orangered;
+}
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+
+/*El comodín del * aplica el estilo si contienen el texto en cuestión en cualquier parte*/
+
+.selectores-atributos a[href*="duanly-dev-app"] {
+  font-size: 24px;
+}
+
+/*El comodín del ^ aplica el estilo si contienen el texto en cuestión al inicio */
+
+.selectores-atributos a[href^="https"] {
+  color: aqua;
+}
+
+/*El comodín del $ aplica el estilo si contienen el texto en cuestión al final*/
+.selectores-atributos a[href$=".app"] {
+  color: black;
+}
+
+/*El comodín del ~  aplica el estilo si contienen el texto en cuestión en una lista separada por espacios*/
+
+.selectores-atributos a[class~="blog"] {
+  color: rgb(49, 208, 73);
+}
+
+/*El comodín del | aplica el estilo si contienen el texto en cuestión en una lista separada por espacios y que después del texto en cuestión pueda venir un guion medio o mas bien arlado -  */
+
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
+}
