@@ -177,11 +177,12 @@ p {
 .form-peseudoclases *:disabled {
   background-color: pink;
 }
-.menu-peseudoclases {
-  padding-top: 1rem;
-  display: flex;
+.pseudosclases,
+.menu-peseudoclases,
+.p-plseodoclases {
+  flex: 0 0 auto;
+  flex-flow: column wrap;
 }
-
 .menu-peseudoclases a:visited {
   color: olive;
 }
