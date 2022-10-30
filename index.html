@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <section class="container" id="temario-css">
-      <article class="container__init">
+    <section class="container">
+      <article id="temario-css" class="container__init">
         <h1 class="container__title">Aprendiendo CSS3</h1>
         <p><i>Cascading Style Sheets</i>-Hojas de Estilos Cascada</p>
-        <url>
+        <url class="nav">
           <li class="link">
             <a href="index.html#selectores-baicos">Selectores básicos</a>
           </li>
           <li class="link">
             <a href="index.html#selectores-avanzados">Selectores avanzados</a>
+          </li>
+          <li>
+            <a href="index.html#pseudosclases">Pseudo-classes</a>
           </li>
         </url>
         <hr />
@@ -65,14 +68,14 @@
         <ul class="hijos-directos">
           <li><b>Primavera</b></li>
           <li><b>Verano</b></li>
-          <li><b>Inverno</b></li>
+          <li><b>Invierno</b></li>
           <li><b>Otoño</b></li>
         </ul>
         <h4>Selectores de hijos no directos</h4>
         <ul class="hijos-descendientes">
           <li><b>Primavera</b></li>
           <li><b>Verano</b></li>
-          <li><b>Inverno</b></li>
+          <li><b>Invierno</b></li>
           <li><b>Otoño</b></li>
         </ul>
         <h3>Selectores de hermanos</h3>
@@ -80,14 +83,14 @@
         <ul>
           <li><b>Primavera</b></li>
           <li class="hermanos-general"><b>Verano</b></li>
-          <li><b>Inverno</b></li>
+          <li><b>Invierno</b></li>
           <li><b>Otoño</b></li>
         </ul>
         <h4>Selector de hermanos adyacente</h4>
         <ul>
           <li><b>Primavera</b></li>
           <li class="hermanos-adyacentes"><b>Verano</b></li>
-          <li><b>Inverno</b></li>
+          <li><b>Invierno</b></li>
           <li><b>Otoño</b></li>
         </ul>
         <h4>Selector de atributos</h4>
@@ -132,9 +135,74 @@
             </li>
           </ul>
         </nav>
+        <h3>Selectores universal (*)</h3>
+        <ul class="selector-universal">
+          <li><b>Primavera</b></li>
+          <li><b>Verano</b></li>
+          <li><b>Invierno</b></li>
+          <li><b>Otoño</b></li>
+        </ul>
         <hr />
         <a href="index.html#temario-css">☝​</a>
       </article>
+
+      <article id="pseudosclases">
+        <h2>Pseudo-classes</h2>
+        <form class="form-peseudoclases">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escribe un nombre"
+            required
+          />
+          <br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe tu Email"
+            required
+          />
+          <br />
+
+          <input type="submit" value="Enviar" disabled />
+          <input type="submit" value="Enviar" />
+
+          <br />
+        </form>
+        <nav class="menu-peseudoclases">
+          <a href="#seccion1">Sección 1</a>
+          <a href="#seccion2">Sección 2</a>
+          <a href="#seccion3">Sección 3</a>
+          <a href="#seccion4">Sección 4</a>
+        </nav>
+        <p class="p-plseodoclases">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo
+          repellendus eum numquam alias dolor hic, nam, laborum temporibus
+          obcaecati facere, sit aspernatur non facilis adipisci error nihil
+          voluptates excepturi?
+        </p>
+        <ol class="pseudoclases-todo">
+          <li>Mú de Aries</li>
+          <li>Aldebarán de Tauro</li>
+          <li>Saga & Kanon de Géminis</li>
+          <li>Death Mask de Cáncer</li>
+          <li>Aioria de Leo</li>
+          <li>Shaka de Virgo</li>
+          <li>Dohko de Libra</li>
+          <li>Milo de Escorpión</li>
+          <li>Aioros de Sagitario</li>
+          <li>Shura de Capricornio</li>
+          <li>Camus de Acuario</li>
+          <li>Afordita de Piscis</li>
+        </ol>
+        <a href="index.html#temario-css">☝</a>
+      </article>
     </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="index.js" type="module"></script>
   </body>
 </html>

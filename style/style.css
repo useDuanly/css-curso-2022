@@ -9,6 +9,7 @@ html {
   scroll-behavior: smooth;
   font-weight: 16px;
 }
+/*Selector universal*/
 *,
 *::before,
 *::after {
@@ -16,6 +17,7 @@ html {
 }
 body {
   font-family: sans-serif;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
@@ -34,6 +36,20 @@ a {
 
   gap: 8px;
 }
+.nav {
+  padding: 1rem;
+
+  background-color: #2222;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.nav li {
+  list-style-type: none;
+}
+.nav > .link {
+  flex: 0 0 auto;
+}
 
 .container__title {
   background-color: black;
@@ -46,6 +62,10 @@ a {
 .link {
   list-style: none;
 }
+.link li {
+  list-style-type: none;
+}
+
 .container a {
   padding-inline-start: 1rem;
 }
@@ -128,4 +148,65 @@ p {
 
 .selectores-atributos a[class|="menu"] {
   font-style: italic;
+}
+
+/*Selector Universal*/
+.selector-universal * {
+  font-size: 2rem;
+}
+/*Pseudo-clases*/
+
+.form-peseudoclases *:required {
+  border-color: yellow;
+}
+
+.form-peseudoclases *:valid {
+  border-color: green;
+}
+
+.form-peseudoclases *:invalid {
+  border-color: red;
+}
+.form-peseudoclases *:required:invalid {
+  border-color: #c00000;
+}
+
+.form-peseudoclases *:focus {
+  background-color: steelblue;
+}
+.form-peseudoclases *:disabled {
+  background-color: pink;
+}
+.menu-peseudoclases {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.menu-peseudoclases a:visited {
+  color: olive;
+}
+.menu-peseudoclases:hover {
+  color: orange;
+}
+.p-plseodoclases:hover {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#temario-css:target {
+  background-color: aquamarine;
+}
+
+.pseudoclases-todo li:first-child {
+  color: green;
+}
+.pseudoclases-todo li:last-child {
+  color: #c00000;
+}
+
+.pseudoclases-todo li:nth-child(2) {
+  color: rgb(149, 32, 85);
+}
+.pseudoclases-todo li:nth-child(4n) {
+  color: blue;
+  font-size: 20px;
 }
